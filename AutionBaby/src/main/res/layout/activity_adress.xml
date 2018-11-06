@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/base_app_bg"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_view_height"
+        android:background="@color/nav_color"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/framework_base_topnav_layout"/>
+
+        <me.xiaopan.sketch.SketchImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_gravity="right"
+            android:id="@+id/img_add"/>
+
+    </FrameLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line"/>
+
+    <include layout="@layout/framework_base_recyclerview"/>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/base_app_bg"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_view_height"
+        android:background="@color/nav_color"/>
+
+    <include layout="@layout/framework_base_topnav_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.framework.core.widget.RowCellGroupView
+            android:id="@+id/rowcellgroupview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.framework.core.widget.RowCellGroupView>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.aution.paidd"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.aution.paidd.UIApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.aution.paidd.ui.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.aution.paidd.ui.activity.MainActivity" android:screenOrientation="portrait"
+                  android:launchMode="singleTask"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.LoginActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.ChangePassWordActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.SettingActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.UserInfoActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.PayCenterActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.PayListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.ShopCoinListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.LuckyShowActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.AdressListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.UpAdressActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.CityListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.AddLuckyShowActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.RecordListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.MyScoreActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.ShopDetailActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.JoinListActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.SubmitOrderActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.SignActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.ChangeUserInfoActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.H5Activity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.RechargeActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.RegisterSuccessActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+
+
+        <activity
+            android:name="com.ninegrid.preview.ImagePreviewActivity"  android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.aution.paidd.ui.activity.LuckyBoyOrGirlActivity" android:theme="@style/dialgActivity" android:launchMode="singleTask"/>
+
+
+        <receiver android:name="com.aution.paidd.broadcast.NetBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.aution.paidd.service.ConnectService"/>
+
+        <service android:name="com.aution.paidd.service.InitializeService"/>
+
+        <service android:name="com.aution.paidd.service.DownAPKService" />
+
+        <receiver android:name="com.aution.paidd.broadcast.ConnectBroadcast">
+            <intent-filter>
+                <action android:name="com.qxhd.toast"/>
+            </intent-filter>
+        </receiver>
+
+
+        <!--ShareSDK-->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <intent-filter>
+                <data android:scheme="tencent1106402438" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+
+        </activity>
+
+
+        <!--微信分享回调 -->
+        <activity
+            android:name="com.aution.paidd.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!--极光配置-->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":multiprocess"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.aution.paidd" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name="com.aution.paidd.broadcast.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.aution.paidd" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.aution.paidd" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="APPID"
+                   android:value="${APPID_VALUE}"/>
+
+        <meta-data android:name="UMENGKEY"
+                   android:value="${UMENGKEY_VALUE}"/>
+
+        <meta-data android:name="PAYKEY"
+                   android:value="${PAYKEY_VALUE}"/>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="1a16e63d06fb5445b8286af5" /> <!--  </>值来自开发者平台取得的AppKey-->
+
+    </application>
+
+
+    <!-- Required -->
+    <permission
+        android:name="com.aution.paidd.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.aution.paidd.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 悬浮框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+</manifest>

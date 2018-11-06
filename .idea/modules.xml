@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutionBaby/AutionBaby.iml" filepath="$PROJECT_DIR$/AutionBaby/AutionBaby.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pdd.iml" filepath="$PROJECT_DIR$/Pdd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qxcorelibrary/qxcorelibrary.iml" filepath="$PROJECT_DIR$/qxcorelibrary/qxcorelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yellow/yellow.iml" filepath="$PROJECT_DIR$/yellow/yellow.iml" />
+    </modules>
+  </component>
+</project>

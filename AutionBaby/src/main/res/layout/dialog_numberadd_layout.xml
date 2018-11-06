@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_round_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="选择次数"
+        style="@style/TextTitle_Black"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="最多5000次"
+        android:paddingTop="5dp"
+        style="@style/TextDescTitle_Black"
+        />
+
+
+    <com.aution.paidd.ui.widget.ShopNumberView
+        android:id="@+id/shop_number_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+    </com.aution.paidd.ui.widget.ShopNumberView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.framework.core.widget.FlatButton
+            android:id="@+id/dialog_numberadd_sure"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <com.framework.core.widget.FlatButton
+            android:id="@+id/dialog_numberadd_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="取消"
+            app:fb_type="1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

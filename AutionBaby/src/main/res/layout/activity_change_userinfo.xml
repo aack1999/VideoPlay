@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_app_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_view_height"
+        android:background="@color/nav_color"/>
+
+    <include layout="@layout/framework_base_topnav_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/edit_one_style"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/ed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#282828"
+            android:text="昵称："/>
+
+        <com.xw.repo.XEditText
+            android:id="@+id/ed_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:background="#00000000"
+            android:textSize="14sp"
+            android:lines="1"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入新昵称"
+            />
+    </LinearLayout>
+    
+    <com.framework.core.widget.FlatButton
+        android:id="@+id/submit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="确认提交"
+        app:fb_radius="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@drawable/edit_one_style"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_remove_black_18dp"
+        android:padding="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="40dp" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:background="@color/base_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/ed_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:maxLength="4"
+            android:textSize="22sp"
+            android:background="#00000000"
+            android:textColor="@color/theme_color"
+            />
+
+        <View
+            android:id="@+id/temp_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:background="@color/base_line"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:src="@drawable/ic_add_black_18dp"
+        android:padding="5dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="40dp"
+        android:id="@+id/add" />
+
+</LinearLayout>

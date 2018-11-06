@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <com.aution.paidd.ui.widget.MailLineView
+        android:id="@+id/maillineview1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_add_adress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="实物收货地址"
+            android:textColor="@color/base_blue"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/cb_address"
+            android:layout_width="20dp"
+            android:visibility="gone"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/shoucang_checked_selector"
+            android:button="@null"
+            android:clickable="false"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/TextTitle_Black"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="收  货  人：" />
+
+        <TextView
+            android:id="@+id/address_name_one"
+            style="@style/TextDescTitle_Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/TextTitle_Black"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="手机号码：" />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/TextDescTitle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/TextTitle_Black"
+            android:layout_width="70dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="QQ号：" />
+
+        <TextView
+            android:id="@+id/tv_qq"
+            style="@style/TextDescTitle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/TextTitle_Black"
+            android:layout_width="70dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="支付宝：" />
+
+        <TextView
+            android:id="@+id/tv_alipay"
+            style="@style/TextDescTitle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            style="@style/TextTitle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货地址：" />
+
+        <TextView
+            android:id="@+id/address_detail"
+            style="@style/TextDescTitle_Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/base_line" />
+
+    <LinearLayout
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <CheckBox
+            android:id="@+id/address_cb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gou_selector"
+            android:button="@null"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center_vertical" />
+
+        <TextView
+            style="@style/TextDescTitle_Black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="默认地址" />
+
+        <com.framework.core.widget.FlatButton
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="编辑"
+            app:fb_backgroundcolor="@color/theme_color"
+            app:fb_radius="45dp"
+            app:fb_textcolor="@color/theme_color"
+            app:fb_type="1" />
+
+        <com.framework.core.widget.FlatButton
+            android:id="@+id/address_delete_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="删除"
+            app:fb_backgroundcolor="@color/base_gray"
+            app:fb_radius="45dp"
+            app:fb_textcolor="#001723"
+            app:fb_type="1" />
+
+
+    </LinearLayout>
+
+    <com.aution.paidd.ui.widget.MailLineView
+        android:id="@+id/maillineview2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/base_app_bg"
+        />
+
+</LinearLayout>

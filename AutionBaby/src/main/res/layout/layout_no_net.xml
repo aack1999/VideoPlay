@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical" android:layout_width="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="#fff"
+             android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <me.xiaopan.sketch.SketchImageView
+            android:id="@+id/message_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="35%w"
+            app:layout_widthPercent="35%w"
+            />
+
+        <TextView
+            android:id="@+id/message_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/base_text_title"
+            android:text="暂无数据"/>
+
+        <com.framework.core.widget.FlatButton
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:fb_type="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="重试"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+</FrameLayout>

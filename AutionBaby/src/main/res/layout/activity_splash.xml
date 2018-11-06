@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent">
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:background="#458758"
+        android:layout_height="match_parent"
+        android:text="租赁系统V1.0"/>
+
+    <com.framework.core.widget.FlatButton
+        android:id="@+id/btn_counttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fb_radius="45dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+
+        android:paddingTop="10dp"
+        app:fb_backgroundcolor="#555"
+        android:paddingBottom="10dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="跳过(5s)"/>
+
+</FrameLayout>

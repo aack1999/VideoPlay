@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_circle_white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="5dp"
+              android:paddingRight="10dp"
+              android:paddingTop="5dp">
+
+    <me.xiaopan.sketch.SketchImageView
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_jstt"
+        />
+
+    <com.aution.paidd.ui.widget.MarqueeView
+        android:id="@+id/view_scolltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        app:mvAnimDuration="500"
+        app:mvInterval="2000"
+        app:mvSingleLine="true"
+        app:mvTextColor="@color/base_gray"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:background="#fff"
+              android:clipChildren="false"
+              android:layout_height="95.5dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <me.xiaopan.sketch.SketchImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <me.xiaopan.sketch.SketchImageView
+            android:id="@+id/img_ok"
+            android:layout_width="70dp"
+            android:visibility="gone"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"/>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_count_down"
+            style="@style/TextTitle_Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="00:00:09"
+            android:visibility="gone"
+            android:textColor="@color/theme_color"/>
+
+        <TextView
+            android:id="@+id/tv_nowprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="￥2.60"
+            android:textColor="@color/theme_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextTitle_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <com.framework.core.widget.FlatButton
+        android:id="@+id/btn_go"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="我要租"
+        app:fb_radius="45dp">
+
+    </com.framework.core.widget.FlatButton>
+
+
+</LinearLayout>

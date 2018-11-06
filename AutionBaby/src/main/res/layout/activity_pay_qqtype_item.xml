@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pay_qq"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:background="#fff"
+    >
+
+    <ImageView
+        android:layout_width="121dp"
+        android:layout_height="30dp"
+        android:scaleType="fitStart"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="15dp"
+        android:src="@drawable/pay_qq" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:textColor="@color/theme_color"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        style="@style/TextTitle_Black"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/pay_check_qq"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shoucang_checked_selector"
+        android:button="@null"
+        android:clickable="false"
+        android:enabled="false"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

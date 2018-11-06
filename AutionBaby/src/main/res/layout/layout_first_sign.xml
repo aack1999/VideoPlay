@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        app:layout_heightPercent="100%w"
+        app:layout_widthPercent="90%w"/>
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/btn_xx"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-25dp"
+        android:layout_below="@id/tempp"
+        android:layout_centerHorizontal="true"
+        />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

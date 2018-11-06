@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/trm_menu_item_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="8dp"/>
+    <TextView
+        android:id="@+id/trm_menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/base_text_title"
+        android:textSize="15sp"/>
+</LinearLayout>

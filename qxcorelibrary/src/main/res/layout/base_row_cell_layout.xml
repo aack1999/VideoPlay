@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/row_img"
+        android:layout_width="0dp"
+        app:layout_widthPercent="50%h"
+        app:layout_heightPercent="50%h"
+        android:layout_height="0dp"  />
+
+    <TextView
+        android:id="@+id/row_label"
+        android:layout_width="match_parent"
+        tools:text="测试"
+        android:layout_weight="1"
+        style="@style/TextTitle_Black"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/row_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextDescTitle_Black"
+        tools:text="125255"/>
+
+    <ImageView
+        android:id="@+id/row_arrow"
+        android:layout_width="20dp"
+        android:layout_height="12dp"
+        android:src="@drawable/ic_row_forward"/>
+
+    <com.zcw.togglebutton.ToggleButton
+        android:id="@+id/right_toggle"
+        android:layout_width="54dp"
+        app:tbOnColor="#4DD865"
+        android:visibility="gone"
+        android:layout_height="30dp" >
+    </com.zcw.togglebutton.ToggleButton>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/img_type"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_nameid"
+        android:layout_width="100dp"
+        android:singleLine="true"
+        style="@style/TextTitle_Black"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:text="给我拍中一次"/>
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:text="领先"
+        style="@style/TextTitle_Black"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="湖南 长沙"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:paddingRight="5dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_nowprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

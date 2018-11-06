@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/img_bg1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/temp"
+        android:layout_width="159dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"/>
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/tempp"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/temp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <me.xiaopan.sketch.SketchImageView
+        android:id="@+id/btn_xx"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tempp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+</RelativeLayout>

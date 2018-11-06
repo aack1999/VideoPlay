@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/weixin" android:title="微信" android:icon="@drawable/ic_wechat"/>
+    <item android:id="@+id/wxpyq" android:title="微信朋友圈" android:icon="@drawable/ic_wechatmoments"/>
+    <item android:id="@+id/qq" android:title="QQ" android:icon="@drawable/ic_qq"/>
+    <item android:id="@+id/qqzone" android:title="QQ空间" android:icon="@drawable/ic_qzone"/>
+
+</menu>

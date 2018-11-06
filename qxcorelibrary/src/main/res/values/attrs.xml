@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpbStyle" format="reference"/>
+        <attr name="cpb_color" format="color"/>
+        <attr name="cpb_colors" format="reference"/>
+        <attr name="cpb_stroke_width" format="dimension"/>
+        <attr name="cpb_min_sweep_angle" format="integer"/>
+        <attr name="cpb_max_sweep_angle" format="integer"/>
+        <attr name="cpb_sweep_speed" format="float"/>
+        <attr name="cpb_rotation_speed" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlatButton">
+        <attr name="fb_radius" format="dimension"/>
+        <attr name="fb_backgroundcolor" format="color"/>
+        <attr name="fb_textcolor" format="color"/>
+        <attr name="fb_textcolor_press" format="color"/>
+        <attr name="fb_type" format="integer"/>
+        <attr name="fillColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TopNavView">
+        <attr name="tnv_title" format="string"/>
+        <attr name="tnv_right_text" format="string"/>
+        <attr name="tnv_showback" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlymeTabStrip">
+        <!-- 指示器高度 -->
+        <attr name="indicatorHeight" format="dimension" />
+        <!-- 指示器滑动条颜色 -->
+        <attr name="indicatorColor" format="color" />
+        <!-- 指示器左右间距 -->
+        <attr name="indicatorMargin" format="dimension" />
+        <!-- 指示器文字颜色 -->
+        <attr name="indicatorTextColor" format="color" />
+        <!-- 指示器文字大小 -->
+        <attr name="indicatorTextSize" format="dimension" />
+        <!-- 指示器文字被选中后的大小 -->
+        <attr name="selectedIndicatorTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="NineGridView">
+        <attr name="ngv_singleImageSize" format="dimension"/>
+        <attr name="ngv_singleImageRatio" format="float"/>
+        <attr name="ngv_gridSpacing" format="dimension"/>
+        <attr name="ngv_maxSize" format="integer"/>
+        <attr name="ngv_mode" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="grid" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="delay_time" format="integer" />
+        <attr name="scroll_time" format="integer" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_textcolor" format="color" />
+        <attr name="title_textsize" format="dimension" />
+        <attr name="title_height" format="dimension" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <attr name="layout_id" format="reference"/>
+        <attr name="image_scale_type" format="enum">
+            <enum name="center" value="0" />
+            <enum name="center_crop" value="1" />
+            <enum name="center_inside" value="2" />
+            <enum name="fit_center" value="3" />
+            <enum name="fit_end" value="4" />
+            <enum name="fit_start" value="5" />
+            <enum name="fit_xy" value="6" />
+            <enum name="matrix" value="7" />
+        </attr>
+        <!--<attr name="indicator_animator" format="reference" />-->
+        <!--<attr name="indicator_animator_reverse" format="reference" />-->
+    </declare-styleable>
+
+</resources>

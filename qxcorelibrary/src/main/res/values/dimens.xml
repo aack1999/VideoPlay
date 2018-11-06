@@ -1,0 +1,11 @@
+<resources>
+
+
+    <dimen name="cpb_default_stroke_width">4dp</dimen>
+    <item name="cpb_default_sweep_speed" format="float" type="string">1</item>
+    <item name="cpb_default_rotation_speed" format="float" type="string">1</item>
+    <integer name="cpb_default_min_sweep_angle">20</integer>
+    <integer name="cpb_default_max_sweep_angle">300</integer>
+
+    <dimen name="status_view_height">0dp</dimen>
+</resources>

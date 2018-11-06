@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        
+        <me.xiaopan.sketch.SketchImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                style="@style/TextTitle_Black"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="市场价：22"/>
+
+            <TextView
+                android:id="@+id/tv_nowprice"
+                android:layout_width="match_parent"
+                style="@style/TextTitle_Black"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:text="成交价：22"/>
+
+            <TextView
+                android:id="@+id/tv_myprice"
+                android:layout_width="match_parent"
+                style="@style/TextTitle_Black"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:text="我出价：22"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right|center"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <com.framework.core.widget.FlatButton
+            android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:paddingLeft="15dp"
+            app:fb_type="1"
+            android:paddingRight="15dp"
+            android:layout_marginRight="10dp"
+            android:text="物流信息"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            app:fb_radius="45dp"
+            android:layout_height="30dp"/>
+
+        <com.framework.core.widget.FlatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="立即支付"
+            android:layout_gravity="right"
+            app:fb_radius="45dp"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/base_app_bg"/>
+
+</LinearLayout>

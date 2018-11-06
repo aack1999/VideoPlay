@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/base_app_bg"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_view_height"
+        android:background="@color/nav_color"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <include layout="@layout/framework_base_topnav_layout"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+
+            <ImageView
+                android:id="@+id/btn_help"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="选择充值金额"
+                android:textColor="@color/base_gray"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/pay_center_50"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_person"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="¥50"
+                    android:textColor="@color/pay_center_bg"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/pay_center_100"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_person"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="¥100"
+                    android:textColor="@color/pay_center_bg"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/pay_center_200"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_person"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="¥200"
+                    android:textColor="@color/pay_center_bg"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:id="@+id/pay_center_300"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_person"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="¥300"
+                    android:textColor="@color/pay_center_bg"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/pay_center_500"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_person"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="¥500"
+                    android:textColor="@color/pay_center_bg"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/pay_center_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/pay_person"
+                    android:gravity="center"
+                    android:hint="其他金额"
+                    android:imeOptions="actionDone"
+                    android:maxLength="4"
+                    android:numeric="integer"
+                    android:padding="1dp"
+                    android:selectAllOnFocus="true"
+                    android:textColor="@color/base_text_title"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    style="@style/TextTitle_Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="预计获得"/>
+
+                <TextView
+                    android:id="@+id/pay_money_title"
+                    style="@style/TextTitle_Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300拍币"
+                    android:textColor="@color/theme_color"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <TextView
+                    style="@style/TextTitle_Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:text="选择支付方式"
+                    android:textColor="@color/base_text_title"/>
+
+                <TextView
+                    android:id="@+id/tv_pay_money"
+                    style="@style/TextTitle_Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥300"
+                    android:textColor="@color/theme_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.framework.core.widget.FlatButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="确认充值"
+        android:layout_marginTop="10dp"
+        app:fb_radius="45dp"/>
+
+</LinearLayout>

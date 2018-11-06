@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/status_view_height"
+        android:background="@color/nav_color"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/framework_base_topnav_layout"/>
+
+        <ImageView
+            android:id="@+id/btn_share"
+            android:layout_width="48dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_share"
+            android:padding="12dp"
+            android:layout_height="48dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/framework_base_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <include
+            android:id="@+id/suspension_bar"
+            android:visibility="gone"
+            layout="@layout/viewholder_detail_price"/>
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="币的消耗情况："
+            style="@style/TextTitle_Black"/>
+
+        <TextView
+            android:id="@+id/tv_money_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="0/0"
+            android:textColor="@color/theme_color"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buy"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/btn_su"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/select_btn_withe"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="-"/>
+
+        <TextView
+            android:id="@+id/tv_join_count"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/select_btn_withe"
+            android:layout_weight="1"
+            android:text="1"
+            android:gravity="center"
+            style="@style/TextTitle_Black"/>
+
+        <TextView
+            android:id="@+id/btn_add"
+            android:layout_width="36dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:background="@drawable/select_btn_withe"
+            android:layout_height="36dp"
+            android:text="+"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.framework.core.widget.FlatButton
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="出价\n1拍币/次"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:paddingLeft="15dp"
+                app:fb_radius="0dp"
+                android:paddingRight="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.framework.core.widget.FlatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        app:fb_radius="0dp"
+        android:text="前往下一期"
+        android:visibility="gone"
+        android:layout_height="48dp"
+        />
+
+</LinearLayout>

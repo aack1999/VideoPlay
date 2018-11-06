@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_zzrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title_zzrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_select"
+                android:layout_centerInParent="true"
+                android:text="正在拍" />
+
+            <View
+                android:id="@+id/line_zzrp"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_title_zzrp"
+                android:layout_alignRight="@+id/tv_title_zzrp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/theme_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_wzp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title_wzp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_select"
+                android:layout_centerInParent="true"
+                android:text="我在拍" />
+
+            <View
+                android:id="@+id/line_wzp"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_title_wzp"
+                android:layout_alignRight="@+id/tv_title_wzp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/theme_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_xstj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title_xstj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_select"
+                android:layout_centerInParent="true"
+                android:text="新手推荐" />
+
+            <View
+                android:id="@+id/line_xstj"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_title_xstj"
+                android:layout_alignRight="@+id/tv_title_xstj"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/theme_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_wdsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title_wdsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_select"
+                android:layout_centerInParent="true"
+                android:text="我的收藏" />
+
+            <View
+                android:id="@+id/line_wdsc"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_title_wdsc"
+                android:layout_alignRight="@+id/tv_title_wdsc"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/theme_color" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/base_line"/>
+
+</LinearLayout>

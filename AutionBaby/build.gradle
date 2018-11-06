@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.aution.paidd"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "2.0"
+        multiDexEnabled true
+    }
+
+
+    signingConfigs {
+        debug {
+            // No debug config
+        }
+
+        release {
+            storeFile file("../qxhdone.jks")
+            storePassword "qxhdone123"
+            keyAlias "wuhan"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
+                        def fileName = "${variant.productFlavors[0].name}_v${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    // 多渠道打包
+    productFlavors {
+        pdd_101 {
+            manifestPlaceholders = [APPID_VALUE: "s_102", UMENGKEY_VALUE:"59c4691e734be44f50000023",PAYKEY_VALUE : "774E461CB3A848BB8A52C99089BE8D94"]
+        }
+
+    }
+
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.0.0'
+    }
+}
+
+greendao {
+    schemaVersion 3
+    daoPackage 'com.aution.paidd.greendao.gen'
+    targetGenDir 'src/main/java'
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':qxcorelibrary')
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.github.dongjunkun:CouponView:1.0.3'
+    compile 'com.github.lzyzsd:circleprogress:1.2.1'
+    compile 'com.cocosw:bottomsheet:1.+@aar'
+    compile files('libs/JavaWebSocket_fat.jar')
+    compile files('libs/commons-codec-1.10.jar')
+    compile files('libs/jpush-android_v3.0.0.jar')
+    compile files('libs/jcore-android_v1.0.0.jar')
+}

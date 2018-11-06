@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_sdfx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title_sdfx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_select"
+                android:layout_centerInParent="true"
+                android:text="晒单分享" />
+
+            <View
+                android:id="@+id/line_sdfx"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_title_sdfx"
+                android:layout_alignRight="@+id/tv_title_sdfx"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/theme_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_wqcj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title_wqcj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_select"
+                android:layout_centerInParent="true"
+                android:text="往期成交" />
+
+            <View
+                android:id="@+id/line_wqcj"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_title_wqcj"
+                android:layout_alignRight="@+id/tv_title_wqcj"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/theme_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_jpgz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_title_jpgz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_color_select"
+                android:layout_centerInParent="true"
+                android:text="竞拍规则" />
+
+            <View
+                android:id="@+id/line_jpgz"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_title_jpgz"
+                android:layout_alignRight="@+id/tv_title_jpgz"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:background="@color/theme_color" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/base_line" />
+
+</LinearLayout>

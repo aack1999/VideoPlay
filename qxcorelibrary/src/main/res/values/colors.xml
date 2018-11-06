@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#ff1b36</color>
+    <color name="base_app_bg">#252628</color>
+    <color name="base_line">#d7d7d7</color>
+    <color name="base_item_line">#d7d7d7</color>
+    <color name="base_text_title">#222222</color>
+    <color name="yellow">#ffe013</color>
+    <color name="green">#69cc00</color>
+
+    <color name="ic_default_bg_color">#33000000</color>
+    <color name="tr">#00000000</color>
+
+    <array name="theme_colors">
+        <item>@color/theme_color</item>
+    </array>
+
+    <color name="base_gray">#888888</color>
+    <color name="base_blue">#0098ff</color>
+    <color name="base_title_black">#444444</color>
+
+    <color name="nav_color">#f8f8f8</color>
+</resources>
